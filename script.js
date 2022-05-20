@@ -31,9 +31,9 @@ $(document).ready(function () {
         }]
     });
 });
-loadComments();
-let comments = [];
 
+let comments = [];
+loadComments();
 
 document.getElementById('comment-add').onclick = function () {
     let commentName = document.getElementById('comment-name');
