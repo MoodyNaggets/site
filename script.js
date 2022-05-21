@@ -36,6 +36,7 @@ let comments = [];
 loadComments();
 
 document.getElementById('comment-add').onclick = function () {
+    event.preventDefault();
     let commentName = document.getElementById('comment-name');
     let commentBody = document.getElementById('comment-body');
     let comment = {
