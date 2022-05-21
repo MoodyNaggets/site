@@ -35,8 +35,7 @@ $(document).ready(function () {
 let comments = [];
 loadComments();
 
-document.getElementById('comment-add').onclick = function (e) {
-    e.preventDefault()
+document.getElementById('comment-add').onclick = function () {
     let commentName = document.getElementById('comment-name');
     let commentBody = document.getElementById('comment-body');
     let comment = {
