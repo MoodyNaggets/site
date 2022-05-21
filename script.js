@@ -33,7 +33,8 @@ $(document).ready(function () {
 });
 
 let comments = [];
-loadComments();
+loadComments(e);
+e.preventDefault()
 
 document.getElementById('comment-add').onclick = function () {
     let commentName = document.getElementById('comment-name');
@@ -65,8 +66,7 @@ function loadComments() {
     showComments();
 }
 
-function showComments(e) {
-    e.preventDefault()
+function showComments() {
     let commentField = document.getElementById('comment-field');
     let out = '';
     comments.forEach(function (item) {
