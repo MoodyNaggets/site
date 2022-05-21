@@ -70,8 +70,8 @@ function showComments() {
     let out = '';
     comments.forEach(function (item) {
         out += `<div class="text-right"> ${timeConverter(item.time)}</div>`
-        out += `<div class="alert alert-primary" role="alert">${item.name}</div>`;
-        out += `<div class="alert alert-success" role="alert">${item.body}</div>`;
+        out += `<div class="alert-primary" role="alert">${item.name}</div>`;
+        out += `<div class="alert-success" role="alert">${item.body}</div>`;
     });
     commentField.innerHTML = out;
 }
