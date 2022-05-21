@@ -184,6 +184,7 @@ body {
     overflow: hidden;
     position: relative;
     text-align: justify;
+    font-size: medium;
 }
 
 .textbox .bottom {
