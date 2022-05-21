@@ -66,6 +66,10 @@ body {
         height: 28px;
         width: 100%;
     }
+    
+    .textbox{
+        font-size: small;
+    }
 
     .name {
         font-size: small;
