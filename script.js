@@ -65,7 +65,8 @@ function loadComments() {
     showComments();
 }
 
-function showComments() {
+function showComments(e) {
+    e.preventDefault()
     let commentField = document.getElementById('comment-field');
     let out = '';
     comments.forEach(function (item) {
