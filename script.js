@@ -35,7 +35,7 @@ $(document).ready(function () {
 let comments = [];
 loadComments();
 
-document.getElementById('comment-add').onclick = function () {
+document.getElementById('comment-add').onclick = function (), return false; {
     let commentName = document.getElementById('comment-name');
     let commentBody = document.getElementById('comment-body');
     let comment = {
@@ -45,8 +45,8 @@ document.getElementById('comment-add').onclick = function () {
     }
     if (commentName.value == '' | commentBody.value == '') {
         let commentField = document.getElementById('comment-field');
-        error = 'Какое-то поле осталось пустым...';
-        commentField.innerHTML = error;
+        err = 'Какое-то поле осталось пустым...';
+        commentField.innerHTML = err;
     } else {
         commentName.value = '';
         commentBody.value = '';
