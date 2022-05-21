@@ -33,10 +33,10 @@ $(document).ready(function () {
 });
 
 let comments = [];
-loadComments(e);
-e.preventDefault()
+loadComments();
 
-document.getElementById('comment-add').onclick = function () {
+document.getElementById('comment-add').onclick = function (e) {
+    e.preventDefault()
     let commentName = document.getElementById('comment-name');
     let commentBody = document.getElementById('comment-body');
     let comment = {
