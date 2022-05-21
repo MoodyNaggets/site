@@ -1,4 +1,3 @@
-loadComments();
 $(document).ready(function () {
     $('.slider').slick({
         arrows: false,
@@ -34,7 +33,7 @@ $(document).ready(function () {
 });
 
 let comments = [];
-
+loadComments();
 
 document.getElementById('comment-add').onclick = function () {
     let commentName = document.getElementById('comment-name');
