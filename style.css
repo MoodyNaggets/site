@@ -292,7 +292,7 @@ body {
     flex-direction: column;
     background-color: rgb(36, 36, 36);
     margin: 20px auto 0px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: inset 0px 0px 30px 1px rgb(0, 0, 0);
 }
 
