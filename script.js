@@ -70,9 +70,9 @@ function showComments() {
     let commentField = document.getElementById('comment-field');
     let out = '';
     comments.forEach(function (item) {
-        out += `<div class="text-right"> ${timeConverter(item.time)}</div>`
-        out += `<div class="alert-primary" role="alert">${item.name}</div>`;
-        out += `<pre class="alert-success" role="alert">${item.body}</pre>`;
+        out += `<p class="text-right"><em>${timeConverter(item.time)}</em></p>`
+        out += `<p class="alert-primary" role="alert">${item.name}</p>`;
+        out += `<p class="alert-success" role="alert">${item.body}</p>`;
     });
     commentField.innerHTML = out;
 }
