@@ -22,7 +22,7 @@ body {
 }
 
 .fon {
-    width: 100%;
+    max-width: 100%;
     background: url(https://raw.githubusercontent.com/MoodyNaggets/site/d1e291dc378bee5dd2b288b6e595e360fb9b2f8d/menu.svg);
     background-size: cover;
     flex: 1 1 auto;
